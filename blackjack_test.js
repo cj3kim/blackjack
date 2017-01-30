@@ -1,11 +1,22 @@
 var chai = require("chai")
 var chaiImmutable = require("chai-immutable");
+var Immutable = require("immutable");
+var List = Immutable.List;
 
-describe("#gen_deck ", function() {
+describe("#generate_deck", function() {
   it("should create an initial deck of playing cards", function () {
-    var result;
-    expectedResult;
-    assert.deepEqual(result, expectedResult)
+    var input = List(["Hearts", "Spades", "Cloves", "Diamonds"]);
+
+    var result = generate_deck(input);
+    var expectedResult =  List([
+      {
+        value: "2"
+        cardName: "2"
+        suit: "Hearts
+      }
+    ]);
+
+    assert.deepEqual(result.first(), expectedResult)
   });
 })
 
