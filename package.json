@@ -9,6 +9,9 @@
   "author": "cj3kim",
   "license": "MIT",
   "dependencies": {
+    "chai": "^3.5.0",
+    "chai-immutable": "^1.6.0",
+    "immutable": "^3.8.1",
     "underscore": "^1.8.3"
   }
 }
