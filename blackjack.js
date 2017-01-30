@@ -1,8 +1,6 @@
 var _ = require("underscore");
 var Immutable = require("immutable");
 var List = Immutable.List;
-
-
 const Cards = List([ 2,3,4,5,6,7,8,9,10, "Jack", "Queen", "King", "Ace" ])
 
 function assign_face_card_value (face) {
